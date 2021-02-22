@@ -1,0 +1,73 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: rgb(241, 198, 87);
+    
+}
+
+h1 {
+    border: 5px solid black;
+    font-size: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#ecran {
+    border: 5px solid black;
+    width: 300px;
+    height: 150px;
+    margin: auto;
+    background-color: rgb(197, 245, 247);
+    border-top: 40px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 40px;
+}
+
+.touches {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 300px;
+    border: 5px solid black;
+    margin: auto;
+    background-color: black;
+}
+
+button {
+    border: 5px solid black;
+    width: 75px;
+    height: 70px;
+    line-height: 60px;  
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 3px rgb(83, 83, 81);
+}
+
+button:active {
+    box-shadow: 0 2px  rgb(83, 83, 81);
+    transform: translateY(3px);
+}
+
+button[data-key="8"] {
+    background-color: orange;
+    font-weight: bold;
+    color: white;
+}
+
+button[data-key="13"] {
+    grid-column: span 2;
+    width: 150px;
+    background-color: rgb(45, 231, 45);
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+
